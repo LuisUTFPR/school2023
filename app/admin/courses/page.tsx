@@ -3,7 +3,7 @@ import {sql} from "@vercel/postgres"
 export const revalidate =0
 
 export default async function ListCourse(){
-    const {rows} = await sql `SELECT * from courses`;
+    const {rows} = await sql `SELECT * FROM courses`;
     return (
         <div>
         <h1 className="text-center text-xl">Lista de cursos</h1>
