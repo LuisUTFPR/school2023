@@ -1,4 +1,4 @@
-import {sql} from "@vercel/postgres"
+import {sql} from "@vercel/postgres";
 
 export const revalidate =0
 
@@ -10,7 +10,7 @@ export default async function ListCourse(){
 
         <table>
             <thead>
-                <tr><td>Titulo do Curso Col1</td><td>Descrição</td></tr>
+                <tr><td>Titulo do Curso </td><td>Descrição</td></tr>
             </thead>
                 <tbody>
                     {

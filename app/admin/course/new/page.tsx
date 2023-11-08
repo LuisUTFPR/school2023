@@ -1,6 +1,15 @@
+import {sql} from "@vercel/postgres"
+
+export const revalidate =0
+
 export default function NewCourse(){
-   async function saveCourse(){
+   async function saveCourse(formData: FormData){
         "use server"
+        const title = formData.get("title") as string;
+        const description = formData.get("description") as string;
+        const utl = formData.get("url") as string;
+        await sql `INSERT INTO Courses(title, description, url) VALUES (&{title}, &{description}, &{url})`
+
         console.log("Acessou a função.")
     }
     return(
