@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@vercel/postgres": "^0.5.1",
+
     "next": "13.5.4",
+    "next-cloudinary": "^5.7.0",
     "react": "^18",
     "react-dom": "^18"
   },
